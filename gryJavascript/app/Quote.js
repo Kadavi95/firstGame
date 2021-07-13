@@ -1,7 +1,7 @@
 export class Quote {
     constructor(text){
         this.text = text;
-        this.guessed = []
+        this.guessed = [];
     }
     getContent(){
         let content = "";
@@ -20,7 +20,7 @@ export class Quote {
     }
     guess(letter){
         if(!this.text.includes(letter)){
-            return false 
+          return false 
         }
         this.guessed.push(letter)
         return true
